@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.subscribe {
+  width: 1000px;
+  margin: 10px auto;
+  border-radius: 1px;
+  border-radius: 10px;
+  background-color: rgb(41, 67, 86);
+}
+
+.subscribe-content {
+  padding: 20px;
+}
+
+.heading {
+  margin-bottom: 10px;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+span {
+  color: transparent;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.content {
+  width: 600px;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  color: #d4d1d1;
+  line-height: 1.4;
+}
+
+.btn input,
+.btn-action {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.btn-action {
+  background-color: yellow;
+}
+
+.subscribe:hover .btn-action {
+  color: #fff;
+  background-color: orange;
+}
+
+.subscribe:hover input::placeholder {
+  color: orange;
+}
+
+.subscribe:hover input {
+  background-color: #ddd;
+}

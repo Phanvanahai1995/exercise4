@@ -1,0 +1,169 @@
+/* common */
+
+.best-seller {
+  width: 1200px;
+  height: 1000px;
+  margin: 0px auto;
+  background-color: transparent;
+}
+
+.heading {
+  font-size: 50px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.list-menu {
+  text-align: center;
+}
+
+.list-menu a {
+  margin: 2px;
+  padding: 15px 25px;
+  text-align: center;
+  color: #000;
+  background-color: rgb(223, 227, 226);
+}
+
+.list-menu a:hover {
+  color: #fff;
+  background-color: rgb(45, 45, 167);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* product */
+
+.list-product {
+  display: flex;
+  justify-content: space-around;
+}
+
+.list-product li {
+  width: 200px;
+  margin: 100px 30px;
+  list-style: none;
+}
+
+/* product-btn */
+
+.product-action .product-action-btn {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: end;
+  width: 200px;
+  height: 250px;
+  opacity: 0;
+}
+
+.product-action .product-action-btn:hover {
+  opacity: 1;
+}
+
+.product-action .product-action-btn button {
+  padding: 5px 24px;
+  background-color: rgb(45, 45, 167);
+  color: #fff;
+}
+
+.product-action .product-action-btn button:nth-child(4) {
+  padding: 10px 63px;
+  margin-top: 20px;
+}
+
+/* product 1 */
+
+.product-action.product1 {
+  width: 100%;
+  height: 250px;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1xP8Wh3VpDeYE__za4x7T-Y-KZHZhQm1NlQ&usqp=CAU")
+    no-repeat;
+  background-size: contain;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.product-action.product1:hover {
+  background: url(https://shoptretho.com.vn/upload/image/product/20140830/ghe-ngoi-o-to-mamakid-z71b-1.png)
+    no-repeat;
+  background-size: contain;
+}
+
+/* product 2 */
+
+.product-action.product2 {
+  width: 100%;
+  height: 250px;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVKVfAEd3Y0mdnt8N05bznhg02h9xx8VoZTw&usqp=CAU")
+    no-repeat;
+  background-size: contain;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.product-action.product2:hover {
+  background: url(https://thietbisongthinh.com/wp-content/uploads/2022/03/4B3DC83A-418E-4BF6-82D0-6FEEA176BA67-300x300.png)
+    no-repeat;
+  background-size: contain;
+}
+
+/* product 3 */
+
+.product-action.product3 {
+  width: 100%;
+  height: 250px;
+  background: url("https://salt.tikicdn.com/ts/product/39/2f/8e/3781d382b9663285640b57c0a59f1ef6.png")
+    no-repeat;
+  background-size: contain;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.product-action.product3:hover {
+  background: url(https://boba.vn/static/bom-hoi-lop-o-to-mini-12v/cam-nang-mua-sam/bom-hoi-lop-o-to-12v-co-tot-khong-nhung-loi-ich-b/2223wdw.png)
+    no-repeat;
+  background-size: contain;
+}
+
+/* product 4 */
+
+.product-action.product4 {
+  width: 200px;
+  height: 250px;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLmtup7-r1hFj210iWJWqm_uPfw-v2aJxr3TW0h7Z7bINam3n69bCECohWpGInbz23fKU&usqp=CAU")
+    no-repeat;
+  background-size: contain;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.product-action.product4:hover {
+  background: url(https://vn-live-01.slatic.net/p/44b5a7a6263a2e8469e22d169c4ceec0.png)
+    no-repeat;
+  background-size: contain;
+}
+
+/* product-info */
+
+.product-info a {
+  margin: 10px 0;
+}
+
+/* Rate-star */
+
+.product-info {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.rate-star {
+  margin-top: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+.rate-star i:not(i:last-child) {
+  color: yellow;
+}
