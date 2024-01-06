@@ -39,6 +39,28 @@ body {
   margin-top: 30px;
 }
 
+.row {
+  display: flex;
+}
+
+.row .error,
+.error-time {
+  font-family: "Roboto", sans-serif;
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  color: red;
+  visibility: hidden;
+}
+
+label:has(:invalid:not(:placeholder-shown)) .error {
+  visibility: visible;
+}
+
+label:has(:focus:not(:valid)) .error-time {
+  visibility: visible;
+}
+
 .form-table input,
 .btn-action {
   margin: 10px 20px;
@@ -111,5 +133,12 @@ input[type="date"]:focus::before,
 input[type="date"]:focus::after,
 input[type="time"]:focus::before,
 input[type="time"]:focus::after {
+  display: none;
+}
+
+input[type="date"]:valid::before,
+input[type="date"]:valid::after,
+input[type="time"]:valid::after,
+input[type="time"]:valid::before {
   display: none;
 }

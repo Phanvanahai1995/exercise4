@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -19,19 +23,48 @@
       <h1>Book your table</h1>
       <form class="form-table">
         <div class="row">
-          <input type="text" name="name" placeholder="NAME" required />
-          <input type="email" name="email" placeholder="EMAIL" required />
+          <label>
+            <input
+              type="text"
+              name="name"
+              placeholder="NAME"
+              required
+              minlength="8"
+            />
+            <p class="error">* Nhập ít nhất 8 ký tự</p>
+          </label>
+          <label>
+            <input
+              type="email"
+              name="email"
+              placeholder="EMAIL"
+              required
+              pattern="^[^ ]+@[^ ]+\.[a-z]{2,6}$"
+            />
+            <p class="error">* Vui lòng nhập đúng email</p>
+          </label>
         </div>
         <div class="row">
           <label>
             <input type="date" name="date" required />
+            <p class="error-time">* Vui lòng nhập ngày tháng</p>
           </label>
           <label>
             <input type="time" name="time" required />
+            <p class="error-time">* Vui lòng nhập thời gian</p>
           </label>
         </div>
         <div class="row">
-          <input type="text" name="people" placeholder="PEOPLE" required />
+          <label>
+            <input
+              type="text"
+              name="people"
+              placeholder="PEOPLE"
+              required
+              minlength="12"
+            />
+            <p class="error">* Nhập ít nhất 12 ký tự</p>
+          </label>
           <button class="btn-action">Find A Table</button>
         </div>
       </form>
